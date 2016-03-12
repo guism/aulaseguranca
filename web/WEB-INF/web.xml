@@ -29,6 +29,13 @@
             30
         </session-timeout>
     </session-config>
+    <login-config>  
+		<auth-method>FORM</auth-method>  
+		<form-login-config>    
+			<form-login-page>/loginPage.html</form-login-page>    
+			<form-error-page>/loginError.html</form-error-page>  
+		</form-login-config> 
+	</login-config>         
     <security-constraint>
         <display-name>Constraint1</display-name>
         <web-resource-collection>
